@@ -1,20 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>NewsApp</title>
-	</head>
-	<body>
-		{% for blog in blogs %}
-		<div>
-			<h1><a href="">{{ blog.blog_title }}</a></h1>
-			<p>{{ blog.blog_content }}</p>
-			<br />
-			<b>Author : {{ blog.blog_author }}</b>
-			<br />
-			<p>Post Date : {{blog.blog_creation_date}}</p>
-		</div>
-		{% endfor %}
-	</body>
-</html>
+{% extends "./base.html" %} {% block content %}
+<div id="content-gallery">
+	{% for blog in blogs %}
+	<div id="content-card">
+		<img src="{{ blog.blog_image_primary.url }}" />
+		<h1><a href="">{{ blog.blog_title }}</a></h1>
+		<p>{{ blog.blog_content }}</p>
+		<br />
+		<b>Author : {{ blog.blog_author }}</b>
+		<br />
+		<p>Post Date : {{blog.blog_creation_date}}</p>
+	</div>
+	{% endfor %}
+</div>
+{% endblock %}

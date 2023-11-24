@@ -1,14 +1,13 @@
 {% extends "./base.html" %} {% block content %}
-<div id="content-gallery">
+<div class="content-gallery">
 	{% for blog in blogs %}
-	<div id="content-card">
-		<img src="{{ blog.blog_image_primary.url }}" />
-		<h1><a href="">{{ blog.blog_title }}</a></h1>
-		<p>{{ blog.blog_content }}</p>
-		<br />
-		<b>Author : {{ blog.blog_author }}</b>
-		<br />
-		<p>Post Date : {{blog.blog_creation_date}}</p>
+	<div class="content-card">
+		<img
+			src="{{ blog.blog_image_primary.url }}"
+			width="100%"
+			height="200px"
+		/>
+		<h3 class="blog-headline">{{ blog.blog_title }}</h3>
 	</div>
 	{% endfor %}
 </div>

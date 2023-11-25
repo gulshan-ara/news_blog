@@ -1,0 +1,9 @@
+{% extends "./base.html" %} {% block content %}
+<div class="blog-container">
+	<h3 id="blog-title">{{ blog.blog_title }}</h3>
+	<img src="{{ blog.blog_image_primary.url }}" width="50%" height="300px" />
+	<pre class="blog-content">{{ blog.blog_content }}</pre>
+	<p class="author">Author : {{ blog.blog_author }}</p>
+	<p class="date">Posted On : {{ blog.blog_creation_date }}</p>
+</div>
+{% endblock %}

@@ -4,4 +4,5 @@ from . import views
 urlpatterns = [
   # the request for root path serves the index function in views file
   path('', views.index, name='index'),
+  path('blog/<int:pk>', views.blog, name='blog')
 ]

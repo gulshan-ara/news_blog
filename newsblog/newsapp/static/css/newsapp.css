@@ -14,8 +14,7 @@
 	flex: 2;
 	margin: 0;
 	padding: 0;
-	/* font-size: 30px; */
-	font-family: sans-serif;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 #nav-links {
@@ -65,11 +64,11 @@ li {
 }
 
 #blog-title {
-  padding-top: 100px;
+	padding-top: 100px;
 	margin-top: 20px;
 	font-size: 25px;
 	/* border: 1px solid black; */
-	font-family: 'Courier New', Courier, monospace;
+	font-family: "Courier New", Courier, monospace;
 }
 
 pre {
@@ -79,15 +78,71 @@ pre {
 	width: 70%;
 }
 
-.author{
+.author {
 	font-size: 18px;
 	font-style: oblique;
 	margin-top: 2px;
 	margin-bottom: 5px;
 }
 
-.date{
+.date {
 	font-size: 18px;
 	font-style: oblique;
 	margin-top: 2px;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center; /* Center the links horizontally */
+	align-items: center;
+}
+
+.step-links a {
+	margin: 0 5px; /* Add some spacing between the links */
+	font-size: 18px;
+}
+
+.current {
+	padding: 5px 20px; /* Add padding to the current page number */
+	text-align: center;
+	color: black; /* Set the text color for the current page number */
+}
+
+footer {
+	background-color: lavender;
+	color: #333;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+footer a {
+	color: #333;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+footer a:hover {
+	color: #555;
+}
+
+.social-icons {
+	margin-top: 10px;
+}
+
+.social-icons a {
+	display: inline-block;
+	margin: 0 10px;
+	color: #333;
+	font-size: 20px;
+}
+
+.social-icons a:hover {
+	color: #555;
+}
+
+.social-icons img {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
 }

@@ -12,7 +12,13 @@
 			width="500px"
 			height="300px"
 		/>
-		<pre class="blog-content">{{ blog.blog_content }}</pre>
+		<pre class="blog-content">{{ blog.blog_content_para_one }}</pre>
+		<pre class="blog-content">{{ blog.blog_content_para_two }}</pre>
+		<p>Read more : <a href="/blog/{{blog.inline_link_one.pk}}">{{blog.inline_link_one.blog_title}}</a></p>
+		<pre class="blog-content">{{ blog.blog_content_para_three }}</pre>
+		<pre class="blog-content">{{ blog.blog_content_para_four }}</pre>
+		<p>Read more : <a href="/blog/{{blog.inline_link_two.pk}}">{{blog.inline_link_two.blog_title}}</a></p>
+		<pre class="blog-content">{{ blog.blog_content_para_five }}</pre>
 	</div>
 
 	<!-- aside links -->
@@ -20,20 +26,40 @@
 		<h4>Related News Links</h4>
 		<ul class="links-container">
 			<li class="other-blog-link">
-				<img src="{{ blog.blog_image_primary.url }}" alt="Link 1" />
-				<a href="link1_url">Link 1</a>
+				<img
+					src="{{ blog.related_link_one.blog_image_primary.url }}"
+					alt="Link 1"
+				/>
+				<a href="/blog/{{blog.related_link_one.pk}}"
+					>{{blog.related_link_one.blog_title}}</a
+				>
 			</li>
 			<li class="other-blog-link">
-				<img src="{{ blog.blog_image_primary.url }}" alt="Link 1" />
-				<a href="link1_url">Link 1</a>
+				<img
+					src="{{ blog.related_link_two.blog_image_primary.url }}"
+					alt="Link 1"
+				/>
+				<a href="/blog/{{blog.related_link_two.pk}}"
+					>{{blog.related_link_two.blog_title}}</a
+				>
 			</li>
 			<li class="other-blog-link">
-				<img src="{{ blog.blog_image_primary.url }}" alt="Link 1" />
-				<a href="link1_url">Link 1</a>
+				<img
+					src="{{ blog.related_link_three.blog_image_primary.url }}"
+					alt="Link 1"
+				/>
+				<a href="/blog/{{blog.related_link_three.pk}}"
+					>{{blog.related_link_three.blog_title}}</a
+				>
 			</li>
 			<li class="other-blog-link">
-				<img src="{{ blog.blog_image_primary.url }}" alt="Link 1" />
-				<a href="link1_url">Link 1</a>
+				<img
+					src="{{ blog.related_link_four.blog_image_primary.url }}"
+					alt="Link 1"
+				/>
+				<a href="/blog/{{blog.related_link_four.pk}}"
+					>{{blog.related_link_four.blog_title}}</a
+				>
 			</li>
 		</ul>
 	</aside>

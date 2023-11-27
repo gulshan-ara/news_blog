@@ -1,13 +1,10 @@
-.main-body {
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 5%;
-}
-
+/* header style */
 #nav-block {
 	display: flex;
 	flex-direction: "row";
 	justify-content: space-between;
+	margin: 3% 5%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #site-name {
@@ -20,6 +17,7 @@
 #nav-links {
 	height: 20px;
 	flex: 1;
+	padding: 10px 0;
 }
 
 ul {
@@ -35,25 +33,42 @@ ul {
 li {
 	display: inline;
 	font-size: 18px;
+	font-weight: bold;
 }
 
+li a {
+	color: #333;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: #555;
+}
+
+
+
+
+
+/* index page styles */
 .content-gallery {
 	margin-top: 60px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 	padding: 30px;
-	/* border: 1px solid black; */
 }
 
 .content-card {
 	flex: 0 0 calc(33.33% - 20px); /* Adjust width and margin as needed */
-	background-color: #f0f0f0;
+	background-color: #ffffff;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
 	margin-bottom: 20px;
 	box-sizing: border-box;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .blog-headline {
@@ -61,34 +76,6 @@ li {
 	text-decoration: none;
 	font-size: 20px;
 	font-style: oblique;
-}
-
-#blog-title {
-	padding-top: 100px;
-	margin-top: 20px;
-	font-size: 25px;
-	/* border: 1px solid black; */
-	font-family: "Courier New", Courier, monospace;
-}
-
-pre {
-	white-space: pre-wrap; /* Preserve line breaks and wrap long lines */
-	font-family: "Courier New", monospace; /* Use a monospaced font for better alignment */
-	padding-top: 15px;
-	width: 70%;
-}
-
-.author {
-	font-size: 18px;
-	font-style: oblique;
-	margin-top: 2px;
-	margin-bottom: 5px;
-}
-
-.date {
-	font-size: 18px;
-	font-style: oblique;
-	margin-top: 2px;
 }
 
 .pagination {
@@ -108,6 +95,94 @@ pre {
 	color: black; /* Set the text color for the current page number */
 }
 
+
+
+
+
+/* blog page style */
+.blog-page{
+	padding: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.blog-container{
+	flex: 2;
+	padding-right: 5%;
+}
+
+#blog-title{
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 30px;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.info-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+pre {
+	white-space: pre-wrap; /* Preserve line breaks and wrap long lines */
+	font-family: "Courier New", monospace; /* Use a monospaced font for better alignment */
+	padding-top: 15px;
+	width: 100%;
+}
+
+.author {
+	font-size: 20px;
+	font-style: oblique;
+	/* margin-bottom: 5px; */
+	margin-right: 20px;
+}
+
+.date {
+	font-size: 20px;
+	font-style: oblique;
+	margin-left: 20px;
+}
+
+/* blog aside links */
+.blog-aside{
+	flex: 1;
+}
+
+.blog-aside h4{
+	font-family: "Courier New", Courier, monospace;
+	padding-left: 5%;
+	font-size: 20px;
+}
+
+.links-container{
+	display: flex;
+	flex-direction: column;
+	padding-left: 5%;
+}
+
+.other-blog-link{
+	display: flex;
+	flex-direction: column;
+	height: 220px;
+	margin-bottom: 20px;
+}
+.other-blog-link img{
+	width: 100%;
+	height: 180px;
+}
+
+.other-blog-link a{
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+	font-style: oblique;
+	margin-top: 5px;
+}
+
+/* footer styles  */
 footer {
 	background-color: lavender;
 	color: #333;

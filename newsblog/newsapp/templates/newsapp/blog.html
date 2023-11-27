@@ -1,9 +1,41 @@
 {% extends "./base.html" %} {% block content %}
-<div class="blog-container">
-	<h3 id="blog-title">{{ blog.blog_title }}</h3>
-	<img src="{{ blog.blog_image_primary.url }}" width="50%" height="300px" />
-	<pre class="blog-content">{{ blog.blog_content }}</pre>
-	<p class="author">Author : {{ blog.blog_author }}</p>
-	<p class="date">Posted On : {{ blog.blog_creation_date }}</p>
+<div class="blog-page">
+	<!-- main content -->
+	<div class="blog-container">
+		<h3 id="blog-title">{{ blog.blog_title }}</h3>
+		<div class="info-container">
+			<p class="author">Author : {{ blog.blog_author }}</p>
+			<p class="date">Posted On : {{ blog.blog_creation_date }}</p>
+		</div>
+		<img
+			src="{{ blog.blog_image_primary.url }}"
+			width="500px"
+			height="300px"
+		/>
+		<pre class="blog-content">{{ blog.blog_content }}</pre>
+	</div>
+
+	<!-- aside links -->
+	<aside class="blog-aside">
+		<h4>Related News Links</h4>
+		<ul class="links-container">
+			<li class="other-blog-link">
+				<img src="{{ blog.blog_image_primary.url }}" alt="Link 1" />
+				<a href="link1_url">Link 1</a>
+			</li>
+			<li class="other-blog-link">
+				<img src="{{ blog.blog_image_primary.url }}" alt="Link 1" />
+				<a href="link1_url">Link 1</a>
+			</li>
+			<li class="other-blog-link">
+				<img src="{{ blog.blog_image_primary.url }}" alt="Link 1" />
+				<a href="link1_url">Link 1</a>
+			</li>
+			<li class="other-blog-link">
+				<img src="{{ blog.blog_image_primary.url }}" alt="Link 1" />
+				<a href="link1_url">Link 1</a>
+			</li>
+		</ul>
+	</aside>
 </div>
 {% endblock %}

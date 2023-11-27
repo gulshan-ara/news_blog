@@ -8,7 +8,7 @@ from .models import *
 def index(request):
   blogs_list = BlogData.objects.all().order_by('-blog_creation_date')
   # Number of blogs to display per page
-  blogs_per_page = 2
+  blogs_per_page = 15
   # Get the current page from the request's GET parameters
   page = request.GET.get('page', 1)
   paginator = Paginator(blogs_list, blogs_per_page)

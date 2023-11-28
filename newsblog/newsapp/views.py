@@ -6,7 +6,7 @@ from .models import *
 
 # Index function promised in urls
 def index(request):
-  blogs_list = BlogData.objects.all().order_by('-blog_creation_date')
+  blogs_list = BlogData.objects.all().order_by('-id')
   # Number of blogs to display per page
   blogs_per_page = 15
   # Get the current page from the request's GET parameters

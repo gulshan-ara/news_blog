@@ -45,10 +45,6 @@ li a:hover {
 	color: #555;
 }
 
-
-
-
-
 /* index page styles */
 .content-gallery {
 	margin-top: 60px;
@@ -78,6 +74,11 @@ li a:hover {
 	font-style: oblique;
 }
 
+.content-card p {
+	font-size: 18px;
+	font-style: oblique;
+}
+
 .pagination {
 	display: flex;
 	justify-content: center; /* Center the links horizontally */
@@ -95,24 +96,20 @@ li a:hover {
 	color: black; /* Set the text color for the current page number */
 }
 
-
-
-
-
 /* blog page style */
-.blog-page{
+.blog-page {
 	padding: 5%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-.blog-container{
+.blog-container {
 	flex: 2;
 	padding-right: 5%;
 }
 
-#blog-title{
+#blog-title {
 	padding-top: 10px;
 	margin-top: 10px;
 	margin-bottom: 5px;
@@ -120,7 +117,7 @@ li a:hover {
 	font-family: "Courier New", Courier, monospace;
 }
 
-.info-container{
+.info-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -131,6 +128,17 @@ pre {
 	font-family: "Courier New", monospace; /* Use a monospaced font for better alignment */
 	padding-top: 15px;
 	width: 100%;
+}
+
+.img-caption {
+	font-size: 18px;
+	width: 100%;
+	font-style: oblique;
+}
+
+.inline-link {
+	font-size: 20px;
+	font-style: oblique;
 }
 
 .author {
@@ -147,34 +155,34 @@ pre {
 }
 
 /* blog aside links */
-.blog-aside{
+.blog-aside {
 	flex: 1;
 }
 
-.blog-aside h4{
+.blog-aside h4 {
 	font-family: "Courier New", Courier, monospace;
 	padding-left: 5%;
 	font-size: 20px;
 }
 
-.links-container{
+.links-container {
 	display: flex;
 	flex-direction: column;
 	padding-left: 5%;
 }
 
-.other-blog-link{
+.other-blog-link {
 	display: flex;
 	flex-direction: column;
 	height: 220px;
 	margin-bottom: 20px;
 }
-.other-blog-link img{
+.other-blog-link img {
 	width: 100%;
 	height: 180px;
 }
 
-.other-blog-link a{
+.other-blog-link a {
 	text-decoration: none;
 	color: #000;
 	font-size: 20px;
